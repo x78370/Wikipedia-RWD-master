@@ -1,4 +1,12 @@
 /*===============
+	GLOBAL
+===============*/
+
+img {
+	max-width: 100%;
+}
+
+/*===============
 	LAYOUT
 ===============*/
 .container {
@@ -28,7 +36,9 @@ aside {
 .facts {
 	background: pink;
 	float: right;
-	width: 160px; 
+	width: 37.5%; /* 120 ÷ 320 = 37.5% */
+	padding: 20px; /* 20 ÷ 320 = 0.625% */
+	/* margin you divide by your container, padding you divide by itself */
 }
 
 footer {
@@ -41,7 +51,15 @@ footer {
 /*===============
 	NAV
 ===============*/
+nav {
+	float: left;
+}
 
+nav li {
+	float: left;
+	list-style: none;
+	margin: 0 20px;
+}
 
 /*===============
 	TYPOGRAPHY
@@ -75,7 +93,7 @@ footer a {
 
 
 /*===============
-	DESKTOP
+	Large DESKTOP
 ===============*/
 @media screen and ( max-width: 1440px ) {
 	
@@ -83,8 +101,28 @@ footer a {
 		background: red;	
 	}
 
-} /* end of Desktop */
+} /* end of Large Desktop */
 
+
+/*===============
+	Standard DESKTOP
+===============*/
+@media screen and ( max-width: 1280px ) {
+	
+	body {
+		background: yellow;	
+	}
+	
+	aside {
+		text-align: center;	
+	}
+	.facts {
+	float: none;
+	text-align: left;
+	width: 100%;
+	}
+
+} /* end of Standard Desktop */
 
 /*===============
 	TABLET
@@ -93,6 +131,30 @@ footer a {
 	
 	body {
 		background: green;	
+	}
+	
+	nav ul {
+		margin-left: 0;
+		padding: 0;
+		
+	}
+	
+	nav li {
+		float: none;
+		text-align: center;
+		background: brown;
+		margin: 2.083333333%; /* 20px ÷ 960px */
+		padding: 15px 0; /* the hit state was 20, we want 50 so we have 30 px to add, divide in 2 to apply top and bottom so 15 on each */
+		width: inherit; /* inherits the width from wherever it was set previously, so it inherits from the nav at 100% */
+	}
+	
+	aside {
+		text-align: center;
+	}
+	
+	.facts {
+		width: 100%;
+		text-align: left;
 	}
 
 } /* end of tablet */
