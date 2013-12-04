@@ -1,0 +1,132 @@
+/*===============
+	LAYOUT
+===============*/
+.container {
+	background: #0FF;
+	margin: 0 auto;
+	width: 95%; /* 960px */
+	max-width: 95%; /* 960px */
+}
+
+nav {
+	background: #FFC;
+	width: 100%; /* 960px / 960px = 100% */ 
+}
+
+article {
+	background: #FCF;
+	float: left;
+	width: 66.66666666%; /* 640px / 960px = 66.66666666% */
+}
+
+aside {
+	background: #660;
+	float: left;
+	width: 33.3333333%; /* 320px / 960px = 33.3333333%*/
+}
+
+.facts {
+	background: pink;
+	float: right;
+	width: 160px; 
+}
+
+footer {
+	background: maroon;
+	clear: both; 
+	width: 100%; /* 960px */
+}
+
+
+/*===============
+	NAV
+===============*/
+
+
+/*===============
+	TYPOGRAPHY
+===============*/
+h1 {
+	font-size: 3em; /* 48px / 16px = 3em */
+}
+
+h2 {
+	font-size: 2.25em; /* 36px / 16px = 2.25em */
+}
+
+h3 {
+	font-size: 1.5em; /* 24px /16px = 1.5em */ 
+}
+
+p {
+	font-size: 1.25em; /* 20px */
+	line-height: 1.25em; /* 20px */
+}
+
+/* All Links */ 
+a {
+	color: #F00;
+	font-size: 1.25em; /* 20px */
+}
+
+footer a {
+	font-size: 1em; /* 20px / 20px = 1em  */
+}
+
+
+/*===============
+	DESKTOP
+===============*/
+@media screen and ( max-width: 1440px ) {
+	
+	body {
+		background: red;	
+	}
+
+} /* end of Desktop */
+
+
+/*===============
+	TABLET
+===============*/
+@media screen and ( max-width: 768px ) {
+	
+	body {
+		background: green;	
+	}
+
+} /* end of tablet */
+
+/*===============
+	PHONE
+===============*/
+@media screen and ( max-width: 480px ) {
+	
+	body {
+		background: blue;	
+	}
+	
+	aside {
+		float: none;	
+	}
+
+} /* end of phone */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
